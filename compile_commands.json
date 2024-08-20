@@ -1,0 +1,12 @@
+[
+    {
+        "file": "main.c",
+        "command": "clang -I./src -MMD -MP  -c main.c -o build/./main.c.o",
+        "directory": "."
+    },
+    {
+        "file": "natalia.c",
+        "command": "clang -I./src -MMD -MP  -c src/natalia.c -o build/./src/natalia.c.o",
+        "directory": "."
+    }
+]
