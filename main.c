@@ -1,9 +1,7 @@
-#include <stdio.h>
-
-#include "natalia.h"
+#include "all.h"
 
 int main() {
-  printf("Hello World!\n");
-  printf("data: %d\n", example_function());
+  hello_world();
+
   return 0;
 }
