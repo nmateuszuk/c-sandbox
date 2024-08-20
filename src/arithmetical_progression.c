@@ -12,6 +12,6 @@ void arithmetical_progression() {
   printf("provide n\n");
   scanf("%d", &n);
   float an;
-  an = a1 + a1 * (n - 1) * d;
+  an = a1 + (n - 1) * d;
   printf("value of an element of arithmetical progression %f\n", an);
 }

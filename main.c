@@ -8,6 +8,7 @@ int main() {
   scanf_example1();
   scanf_example2();
   arithmetical_progression();
+  sequence_sum();
 
   return 0;
 }
