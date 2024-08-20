@@ -8,3 +8,6 @@ make run
 
 make
 
+## TODO
+
+get some tests running, for example: https://github.com/ThrowTheSwitch/Unity
