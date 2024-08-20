@@ -3,6 +3,7 @@
 int main() {
   hello_world();
   printf_formatting();
+  basic_calculator();
 
   return 0;
 }
