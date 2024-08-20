@@ -4,3 +4,4 @@ void basic_calculator();
 void loops();
 void scanf_example1();
 void scanf_example2();
+void arithmetical_progression();

@@ -7,6 +7,7 @@ int main() {
   loops();
   scanf_example1();
   scanf_example2();
+  arithmetical_progression();
 
   return 0;
 }
