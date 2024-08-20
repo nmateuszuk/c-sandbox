@@ -9,6 +9,7 @@ int main() {
   scanf_example2();
   arithmetical_progression();
   sequence_sum();
+  salary_calculation();
 
   return 0;
 }
