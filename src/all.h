@@ -7,3 +7,7 @@ void scanf_example2();
 void arithmetical_progression();
 void sequence_sum();
 void salary_calculation();
+void simple_pointers_example();
+void pointers_grades_example();
+void pointers_example_2();
+void findMinMax(int num1, int num2, int *pMax, int *pMin);
