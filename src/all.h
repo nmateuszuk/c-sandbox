@@ -11,3 +11,8 @@ void simple_pointers_example();
 void pointers_grades_example();
 void pointers_example_2();
 void findMinMax(int num1, int num2, int *pMax, int *pMin);
+int palindrome(int arrPalindorme[], int size);
+int largestSum(int array1[]);
+const char *checkArrayOrder(int array4[], int size);
+int milionDollars();
+void printPyramid(int rows);
