@@ -35,6 +35,7 @@ int main() {
   // pointers_grades_example();
   // pointers_example_2();
   //  time_to_drive();
+  // reverseNumber();
 
   printf("---------------------------\n");
   int arrPalindorme[5] = {1, 2, 3, 2, 1};
@@ -169,17 +170,6 @@ int main() {
   // printf("number %d\n", n / 100);
 
   //-------------------------------------
-  // print reverse number
-  // int n;
-  // scanf("%d", &n);
-  // int units = n % 10;
-  // int tens = n % 100 / 10;
-  // int hundreds = n / 100;
-
-  // printf("reverse number %d%d%d\n", units, tens, hundreds);
-
-  // int reverse = units * 100 + tens * 10 + hundreds;
-  // printf("reverse number %d\n", reverse);
 
   //---------------------------------------
 

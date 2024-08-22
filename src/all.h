@@ -24,3 +24,4 @@ void time_to_drive();
 void convertToHoursMinutesSeconds();
 void convertToSeconds();
 void findBiggerNumber();
+void reverseNumber();
