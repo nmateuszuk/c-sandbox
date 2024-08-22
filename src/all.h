@@ -20,3 +20,6 @@ void findOnlySingleElements(int arrayToCheck[]);
 void printWithoutRepetitions(int arrayToCheck[]);
 void rotate_array_n(int array7[], int shift, int size);
 void rotate_array_right(int array7[], int shift, int size);
+void time_to_drive();
+void convertToHoursMinutesSeconds();
+void convertToSeconds();

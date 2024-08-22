@@ -34,6 +34,7 @@ int main() {
   // simple_pointers_example();
   // pointers_grades_example();
   // pointers_example_2();
+  //  time_to_drive();
 
   printf("---------------------------\n");
   int arrPalindorme[5] = {1, 2, 3, 2, 1};
@@ -142,45 +143,11 @@ int main() {
   int sizeOfArayToShift = 4;
   rotate_array_n(arayToShift, shift, sizeOfArayToShift);
   rotate_array_right(arayToShift, 1, sizeOfArayToShift);
-
-  printf("\n");
+  printf("\n---------------------------\n");
 
 #define SIZE 5
 
   // int runs() {
-
-  // time to drive
-
-  // float distance;
-  // float speed;
-  // scanf("%f", &distance);
-  // scanf("%f", &speed);
-  // int time;
-  // time = distance / speed * 60;
-
-  // int timeHours = (time / 60);
-  // int timeMinutes = (time % 60);
-
-  // printf("time to drive in hours %d and  minutes %d\n", timeHours,
-  // timeMinutes);
-
-  //-------------------------------------
-  // convert seconds to hours, minutes and seconds
-  // int seconds;
-  // scanf("%d", &seconds);
-  // int hours = seconds / 3600;
-  // int minutes = (seconds % 3600) / 60;
-  // int seconds2 = (seconds % 3600) % 60;
-  // printf("hours %d, minutes %d, seconds %d\n", hours, minutes, seconds2);
-
-  //-------------------------------------
-  // convert hours, minutes and seconds to seconds
-  // int hours, minutes, seconds;
-  // scanf("%d", &hours);
-  // scanf("%d", &minutes);
-  // scanf("%d", &seconds);
-  // int totalSeconds = hours * 3600 + minutes * 60 + seconds;
-  // printf("total seconds %d\n", totalSeconds);
 
   //-------------------------------------
   // float a = 12.7;
