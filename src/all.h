@@ -23,3 +23,4 @@ void rotate_array_right(int array7[], int shift, int size);
 void time_to_drive();
 void convertToHoursMinutesSeconds();
 void convertToSeconds();
+void findBiggerNumber();

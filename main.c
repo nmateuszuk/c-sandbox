@@ -147,8 +147,6 @@ int main() {
 
 #define SIZE 5
 
-  // int runs() {
-
   //-------------------------------------
   // float a = 12.7;
   // int b = (int)a;
@@ -211,12 +209,6 @@ int main() {
   // } else {
   //   printf("failed, try again!\n");
   // }
-
-  // int number1, number2;
-  // printf("input two numbers \n");
-  // scanf("%d %d", &number1, &number2);
-  // printf("max is %d \n", (int)fmax(number1, number2));
-  // printf("max is %d \n", (number1 > number2) ? number1 : number2);
 
   // int number1;
   // printf("input number \n");
