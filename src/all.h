@@ -16,3 +16,7 @@ int largestSum(int array1[]);
 const char *checkArrayOrder(int array4[], int size);
 int milionDollars();
 void printPyramid(int rows);
+void findOnlySingleElements(int arrayToCheck[]);
+void printWithoutRepetitions(int arrayToCheck[]);
+void rotate_array_n(int array7[], int shift, int size);
+void rotate_array_right(int array7[], int shift, int size);

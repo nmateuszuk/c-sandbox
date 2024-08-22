@@ -95,31 +95,54 @@ int main() {
   //-------------------------------------
 
   int arrayToCheck[9] = {1, 3, 5, 6, 7, 6, 3, 8, 8};
+
   int size = sizeof(arrayToCheck) / sizeof(arrayToCheck[0]);
 
-  int uniqeArray[9];
-  int uniqeArrayCounter = 0;
-  int foundDuplicate;
+  int nonUniqeCounter = 0;
+
+  int nonUniqueArray[9];
+  int nonUniqueCounter = 0;
 
   for (int i = 0; i < size; i++) {
-    foundDuplicate = 0; // Reset foundDuplicate for each element
+    int isDuplicate = 0;
     for (int j = 0; j < size; j++) {
-      if (arrayToCheck[i] == uniqeArray[j]) {
-        foundDuplicate = 1;
+      if (i != j && arrayToCheck[i] == arrayToCheck[j]) {
+        isDuplicate = 1;
         break;
       }
     }
-    if (!foundDuplicate) {
-      uniqeArray[uniqeArrayCounter] = arrayToCheck[i];
-      uniqeArrayCounter++;
+    if (isDuplicate) {
+      // Check if the element is already in nonUniqueArray
+      int alreadyAdded = 0;
+      for (int k = 0; k < nonUniqueCounter; k++) {
+        if (nonUniqueArray[k] == arrayToCheck[i]) {
+          alreadyAdded = 1;
+          break;
+        }
+      }
+      if (!alreadyAdded) {
+        nonUniqueArray[nonUniqueCounter] = arrayToCheck[i];
+        nonUniqueCounter++;
+      }
     }
   }
 
-  // Print unique elements
-  printf("Unique elements: ");
-  for (int i = 0; i < uniqeArrayCounter; i++) {
-    printf("%d ", uniqeArray[i]);
+  // Print non-unique elements
+  printf("Non-unique elements: ");
+  for (int i = 0; i < nonUniqueCounter; i++) {
+    printf("%d ", nonUniqueArray[i]);
   }
+  printf("\n");
+
+  //-------------------
+
+  printf("\n---------------------------\n");
+  int arayToShift[] = {5, 4, 7, 3};
+  int shift = 2;
+  int sizeOfArayToShift = 4;
+  rotate_array_n(arayToShift, shift, sizeOfArayToShift);
+  rotate_array_right(arayToShift, 1, sizeOfArayToShift);
+
   printf("\n");
 
 #define SIZE 5
