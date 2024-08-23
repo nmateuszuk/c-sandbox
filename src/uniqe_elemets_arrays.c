@@ -1,8 +1,7 @@
 #include <stdio.h>
 
-void findOnlySingleElements(int arrayToCheck[]) {
+void findOnlySingleElements(int arrayToCheck[], int size) {
 
-  int size = sizeof(arrayToCheck) / sizeof(arrayToCheck[0]);
   int uniqeArray2[size];
   int uniqeArrayCounter2 = 0;
 
@@ -27,8 +26,7 @@ void findOnlySingleElements(int arrayToCheck[]) {
   }
 }
 
-void printWithoutRepetitions(int arrayToCheck[]) {
-  int size = sizeof(arrayToCheck) / sizeof(arrayToCheck[0]);
+void printWithoutRepetitions(int arrayToCheck[], int size) {
 
   int uniqeArray[size];
   int uniqeArrayCounter = 0;
@@ -55,4 +53,43 @@ void printWithoutRepetitions(int arrayToCheck[]) {
   }
   printf("\n");
   //-------------------------------
+}
+
+void findMultipliedElements(int arrayToCheck[], int size) {
+
+  int nonUniqeCounter = 0;
+
+  int nonUniqueArray[9];
+  int nonUniqueCounter = 0;
+
+  for (int i = 0; i < size; i++) {
+    int isDuplicate = 0;
+    for (int j = 0; j < size; j++) {
+      if (i != j && arrayToCheck[i] == arrayToCheck[j]) {
+        isDuplicate = 1;
+        break;
+      }
+    }
+    if (isDuplicate) {
+      // Check if the element is already in nonUniqueArray
+      int alreadyAdded = 0;
+      for (int k = 0; k < nonUniqueCounter; k++) {
+        if (nonUniqueArray[k] == arrayToCheck[i]) {
+          alreadyAdded = 1;
+          break;
+        }
+      }
+      if (!alreadyAdded) {
+        nonUniqueArray[nonUniqueCounter] = arrayToCheck[i];
+        nonUniqueCounter++;
+      }
+    }
+  }
+
+  // Print non-unique elements
+  printf("Non-unique elements: ");
+  for (int i = 0; i < nonUniqueCounter; i++) {
+    printf("%d ", nonUniqueArray[i]);
+  }
+  printf("\n");
 }

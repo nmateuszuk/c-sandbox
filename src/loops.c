@@ -15,3 +15,48 @@ void loops() {
     printf("\n");
   }
 }
+
+void loops2() {
+  int count = 0;
+  while (count < 10) {
+    printf("*");
+    count++;
+  }
+  printf("\n");
+}
+
+void loopsNumber1() {
+  int n = 10;
+  for (int i = 1; i <= n; i++) {
+    for (int j = 1; j <= i; j++) {
+      printf("%d", j);
+    }
+
+    printf("\n");
+  }
+}
+
+void loopsNumber2() {
+  int n = 9;
+  for (int i = 1; i <= n; i++) {
+    for (int j = 1; j <= i; j++) {
+      printf("%d", i);
+    }
+
+    printf("\n");
+  }
+}
+
+void loopsNumber3() {
+  int num = 10;
+
+  for (int i = 1; i <= num; i++) {
+    printf("%d,", i);
+  }
+  printf("\n");
+  for (int j = num; j >= 1; j--) {
+    printf("%d,", j);
+  }
+  printf("\n");
+  printf("");
+}

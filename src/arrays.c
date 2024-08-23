@@ -47,6 +47,15 @@ int largestSum(int array1[]) {
 }
 
 const char *checkArrayOrder(int array4[], int size) {
+
+  printf("checking if array is ascending, descending or it is neither\n");
+
+  printf("array to check \n");
+
+  for (int i = 0; i < size; i++) {
+    printf("%d ", array4[i]);
+  }
+  printf("\n");
   int ascending = 0;
   int descending = 0;
 
