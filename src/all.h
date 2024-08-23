@@ -32,3 +32,5 @@ void findMultipliedElements(int arrayToCheck[], int size);
 void elementsSumClosestToZero(int arayToCountClosetozero[], int size);
 void arrayElemntsSum(int array[], int size);
 void resetArrayToZero(int *ptr, int size);
+void countWordsInSentence();
+void isPalindorme(char str5[]);

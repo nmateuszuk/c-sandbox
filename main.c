@@ -1,6 +1,7 @@
 #include "all.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 void swap(int num1, int num2) {
   int temp;
@@ -35,6 +36,10 @@ int main() {
   // pointers_example_2();
   //  time_to_drive();
   // reverseNumber();
+  // countWordsInSentence();
+  printf("---------------------------\n");
+  char str5[] = "kot";
+  isPalindorme(str5);
 
   printf("---------------------------\n");
   int arrPalindorme[5] = {1, 2, 3, 2, 1};
