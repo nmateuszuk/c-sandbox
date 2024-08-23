@@ -29,3 +29,6 @@ void hexadecimalToBinary();
 void grade();
 void calculateDistanceBetweenPoints(float x1, float x2, float y1, float y2);
 void findMultipliedElements(int arrayToCheck[], int size);
+void elementsSumClosestToZero(int arayToCountClosetozero[], int size);
+void arrayElemntsSum(int array[], int size);
+void resetArrayToZero(int *ptr, int size);

@@ -1,5 +1,6 @@
 #include "all.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 void swap(int num1, int num2) {
   int temp;
@@ -125,5 +126,18 @@ int main() {
   float y1 = 3;
   float y2 = 7;
   calculateDistanceBetweenPoints(x1, x2, y1, y2);
+  printf("\n---------------------------\n");
+
+  int arayToCountClosetozero[] = {5, 4, 7, 3, 6, 1, -2, -20};
+  int sizeToZero = 8;
+  elementsSumClosestToZero(arayToCountClosetozero, sizeToZero);
+  printf("\n---------------------------\n");
+
+  arrayElemntsSum(arayToCountClosetozero, size);
+
+  printf("\n---------------------------\n");
+
+  resetArrayToZero(arayToCountClosetozero, size);
+
   printf("\n---------------------------\n");
 }
