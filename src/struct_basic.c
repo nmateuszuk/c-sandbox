@@ -103,3 +103,31 @@ Point point4 = {.y = 9, .x = 3};
 
 // designated initializer (other members are initialized with 0)
 Point point5 = {.x = 2};
+
+int equalPoint(Point p1, Point p2) {
+  if (p1.x == p2.x && p1.y == p2.y) {
+    return 1;
+  } else
+    return 0;
+}
+
+int notEqualPoint(Point p1, Point p2) {
+  if (p1.x != p2.x && p1.y != p2.y) {
+    return 1;
+  } else
+    return 0;
+}
+
+Point addition(Point p1, Point p2) {
+  Point result;
+  result.x = p1.x + p2.x;
+  result.y = p1.y + p2.y;
+  return result;
+}
+
+Point increment(Point *p) {
+  (*p).x++;
+  (*p).y++;
+}
+
+// increment(&p1);
