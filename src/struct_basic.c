@@ -7,16 +7,16 @@ typedef struct date {
   int year;
 } Date;
 
-struct point {
+typedef struct point {
   int x;
   int y;
-};
+} Point;
 
 // declaring a variable of structure type
 // struct date mtDate1, myDate2;
 // myDate1.day=10;
 
-void initializePointStructPrint() {
+void pointStructPrint() {
   struct point p1;
   printf("enter x coordinate\n");
   scanf("%d", &p1.x);
@@ -87,3 +87,19 @@ void printNextDate() {
   printf("The date is (%d-%d-%d)\n", currentDate.day, currentDate.month,
          currentDate.year);
 }
+
+// Initializing a struct
+//  declaring a "Point" variable (without initialization)
+Point p1;
+
+// Initializing a "Point" variable (members in order)
+Point p2 = {4, 8};
+
+// Using designated initializer
+Point point3 = {.x = 3, .y = 9};
+
+// Using designated initializer out of order
+Point point4 = {.y = 9, .x = 3};
+
+// designated initializer (other members are initialized with 0)
+Point point5 = {.x = 2};
