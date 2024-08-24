@@ -34,3 +34,5 @@ void arrayElemntsSum(int array[], int size);
 void resetArrayToZero(int *ptr, int size);
 void countWordsInSentence();
 void isPalindorme(char str5[]);
+void initializeStructPrint();
+void printNextDate();

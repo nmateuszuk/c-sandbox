@@ -37,6 +37,8 @@ int main() {
   //  time_to_drive();
   // reverseNumber();
   // countWordsInSentence();
+  // initializeStructPrint();
+
   printf("---------------------------\n");
   char str5[] = "kot";
   isPalindorme(str5);
@@ -145,4 +147,6 @@ int main() {
   resetArrayToZero(arayToCountClosetozero, size);
 
   printf("\n---------------------------\n");
+
+  printNextDate();
 }
