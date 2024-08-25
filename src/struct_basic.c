@@ -129,5 +129,4 @@ Point increment(Point *p) {
   (*p).x++;
   (*p).y++;
 }
-
 // increment(&p1);

@@ -36,3 +36,4 @@ void countWordsInSentence();
 void isPalindorme(char str5[]);
 void initializeStructPrint();
 void printNextDate();
+int findMaxRecursive(int num);
