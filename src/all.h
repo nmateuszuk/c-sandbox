@@ -37,3 +37,6 @@ void isPalindorme(char str5[]);
 void initializeStructPrint();
 void printNextDate();
 int findMaxRecursive(int num);
+int findMinRecursive(int n);
+void printTotalOfChars(int total, char c1, char c2);
+void printTotalOfCharsUppercase(int total, char c1);

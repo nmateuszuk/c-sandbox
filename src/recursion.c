@@ -144,3 +144,57 @@ int findMaxRecursive(int num) {
   }
   return inputUser;
 }
+
+int findMinRecursive(int n) {
+  int inputUser;
+  int minValue;
+
+  printf("Enter value:");
+  scanf("%d", &inputUser);
+
+  if (n > 1) {
+    minValue = findMinRecursive(n - 1);
+    if (inputUser < minValue) {
+      return inputUser;
+    } else
+      return minValue;
+  }
+  return inputUser;
+}
+
+// pell number
+int pellNumberRecursive(int n) {
+  if (n == 0)
+    return 0;
+  if (n == 1)
+    return 1;
+  return 2 * pellNumberRecursive(n - 1) + pellNumberRecursive(n - 2);
+}
+
+void printTotalOfNums(int total, int num1, int num2) {
+
+  if (total >= 1) {
+    printf("%d", num1);
+    printTotalOfNums(total - 1, num1, num2);
+    printf("%d", num2);
+  }
+}
+
+void printTotalOfChars(int total, char c1, char c2) {
+
+  if (total >= 1) {
+    printf("%c", c1);
+    printTotalOfChars(total - 1, c1, c2);
+    printf("%c", c2);
+    // printf("%c", c2);
+  }
+}
+
+void printTotalOfCharsUppercase(int total, char c1) {
+
+  if (total >= 1) {
+    printf("%c", c1);
+    printTotalOfCharsUppercase(total - 1, c1);
+    printf("%c", c1 - 'a' + 'A');
+  }
+}

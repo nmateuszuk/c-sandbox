@@ -152,4 +152,14 @@ int main() {
 
   // int value = findMaxRecursive(4);
   // printf("\n--------%d -------------------\n", value);
+
+  // int value = findMinRecursive(5);
+  // printf("\n--------%d -------------------\n", value);
+
+  printTotalOfChars(4, 'c', 'b');
+
+  printf("\n---------------------------\n");
+
+  printTotalOfCharsUppercase(5, 'e');
+  printf("\n---------------------------\n");
 }
