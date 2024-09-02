@@ -125,7 +125,7 @@ void fputsExample() {
 // fgets (<string>,<int/lenght_limit>, <pointer_to_a_file>)
 void fgetsExample() {
   FILE *filePointer;
-  int count;
+  int count = 0;
   char myString[10];
 
   filePointer = fopen("myFirstFile4.txt", "r");
@@ -137,4 +137,132 @@ void fgetsExample() {
 
     fclose(filePointer);
   }
+}
+
+// EOF - end of file
+// while(!feof(filepointer))
+
+// count number of character in file
+void countCharacters() {
+  char myChar;
+  FILE *filePointer;
+  int count = 0;
+
+  filePointer = fopen("myFirstFile4.txt", "r");
+  if (filePointer != NULL) {
+
+    while ((myChar = fgetc(filePointer)) != EOF) {
+      printf("string %c", myChar);
+      count++;
+    }
+    printf("number of characters %d", count);
+    fclose(filePointer);
+  }
+}
+
+// count number of character in file
+void countLines() {
+  char myChar;
+  FILE *filePointer;
+  int countLines = 0;
+
+  filePointer = fopen("myFirstFile4.txt", "r");
+  if (filePointer != NULL) {
+
+    while ((myChar = fgetc(filePointer)) != EOF) {
+      if (myChar == '\n')
+        countLines++;
+    }
+    printf("number of lines %d", countLines);
+    fclose(filePointer);
+  }
+}
+
+// writing numbers and their powers to file
+
+void powersToFile() {
+  FILE *filePointer;
+  filePointer = fopen("powers.txt", "w");
+
+  if (filePointer != NULL) {
+    for (int i = 0; i <= 100; i++) {
+      fprintf(filePointer, "%d %d \n", i, i * i);
+    }
+    fclose(filePointer);
+  }
+}
+
+// reading numbers from file
+
+void readNumbers() {
+  FILE *filePointer;
+  int num1, num2;
+
+  filePointer = fopen("myFirstFile3.txt", "r");
+  if (filePointer != NULL) {
+
+    for (int i = 0; i <= 10; i++) {
+
+      fscanf(filePointer, "%d%d", &num1, &num2);
+      printf("num from file %d %d", num1, num2);
+    }
+
+    fclose(filePointer);
+  }
+}
+
+// count characters occurance
+void countGivenCharacter() {
+  char givenCharacter;
+  char fileName[20] = {0};
+  FILE *filePointer;
+  int counter = 0;
+
+  printf("Enter a file name to test\n");
+  scanf("%s", &fileName);
+
+  printf("Enter a character\n");
+  scanf("%s", &givenCharacter);
+  filePointer = fopen(fileName, "r");
+  if (filePointer != NULL) {
+    while (!feof(filePointer)) {
+      if (fgetc(filePointer) == givenCharacter) {
+        counter++;
+      }
+    }
+  }
+  printf("total: %d\n", counter);
+}
+
+void countCharacters2() {
+  char currentChar;
+  FILE *filePointer;
+  char fileName[20] = {0};
+  int frequencyArray[26];
+  int maxIndex = 0;
+
+  printf("Enter a file name to test\n");
+  scanf("%s", &fileName);
+
+  filePointer = fopen("myFirstFile4.txt", "r");
+  if (filePointer != NULL) {
+
+    while (!feof(filePointer)) {
+      currentChar = fgetc(filePointer);
+      if (currentChar >= 'a' && currentChar <= 'z') {
+        frequencyArray[currentChar - 'a']++;
+      }
+    }
+  }
+  for (int i = 0; i < 26; i++) {
+    printf("number of characters %c is %d\n", i + 'a', frequencyArray[i]);
+
+    if (frequencyArray[maxIndex] < frequencyArray[i]) {
+      maxIndex = i;
+    }
+  }
+  printf("max apperance of %c is %d\n", maxIndex + 'a',
+         frequencyArray[maxIndex]);
+
+  fclose(filePointer);
 }
