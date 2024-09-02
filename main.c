@@ -162,4 +162,18 @@ int main() {
 
   printTotalOfCharsUppercase(5, 'e');
   printf("\n---------------------------\n");
+
+  // int arrayOfInt[] = {1, 0, 1, 0, 1, 1, 1, 0, 0, 1, 1, 0, 1};
+  // int arraySize = sizeof(arrayOfInt) / sizeof(arrayOfInt[0]);
+
+  // int arr[] = {0, 1, 2, 4, 5, 2, 3, 4};
+  // int arraySize2 = sizeof(arr) / sizeof(arr[0]);
+  // int counter[6]={0};
+  // int counterSize = 5;
+
+  // int arr[] = {6, 8, 7, 8, 9, 10, 7, 8};
+  // int size2 = sizeof(arr) / sizeof(arr[0]);
+
+  // char arr[] = {'k', 'i', 'g', 'f', 'o', 'k', 'l', 'u', 'k'};
+  // int arrSize = sizeof(arr) / sizeof(arr[0]);
 }
