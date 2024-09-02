@@ -1,7 +1,6 @@
 #include "all.h"
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+#define _CRT_SECURE_NO_WARNINGS
 
 void swap(int num1, int num2) {
   int temp;
@@ -176,4 +175,6 @@ int main() {
 
   // char arr[] = {'k', 'i', 'g', 'f', 'o', 'k', 'l', 'u', 'k'};
   // int arrSize = sizeof(arr) / sizeof(arr[0]);
+
+  //------------------------------------
 }
