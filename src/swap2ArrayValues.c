@@ -1,6 +1,5 @@
 // swap 2 array of the same size, values one-by-one
 
-#include <cstdlib>
 #include <stdio.h>
 #include <stdlib.h>
 #define SIZE 5
